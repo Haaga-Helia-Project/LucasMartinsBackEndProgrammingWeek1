@@ -16,5 +16,9 @@ public class PageServiceImpl implements PageService {
     public String getContactMessage() {
         return "This is the contact page";
     }
-    
+
+    @Override
+    public String getWelcomMessage(String location, String name) {
+        return "Welcome to the " + location + " " + name + "!";
+    }
 }
